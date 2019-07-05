@@ -1,0 +1,10 @@
+<h2>{{title}}</h2>
+<!-- <nav>
+    <a routerLink="/detail">detail</a>
+</nav> -->
+<div>名前：<input [(ngModel)]="data.name" placeholder="名前を入力してください"/></div>
+<div>予定：<input [(ngModel)]="data.schedule" placeholder="予定を入力してください"/></div>
+<div>
+  <!-- <input type="button" style="background-color: #6A92CC"> -->
+  <input class="button" type="button" value="画面遷移" style="position: relative;left: 160px" routerLink="/detail" (click)='onClick'/>
+</div>
